@@ -47,8 +47,8 @@ make
 sudo make install
 sudo ldconfig
 
-#Test openCV installtion 
-python OpenCV/samples/python/demo.py 
+#Test openCV
+python OpenCV/samples/python/opencv_version.py 
 
 #This script written over Manuel Ignacio script >> https://milq.github.io/install-opencv-ubuntu-debian/
 #Feel free to copy it, share it, edit it
