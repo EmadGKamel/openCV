@@ -32,10 +32,9 @@ sudo apt-get -y upgrade
 sudo apt-get -y dist-upgrade
 sudo apt-get -y autoremove
 
-
 # INSTALL THE LIBRARY
-
 sudo apt-get install -y unzip wget
+cd ~
 wget https://github.com/opencv/opencv/archive/3.2.0.zip
 unzip 3.2.0.zip
 rm 3.2.0.zip
@@ -47,6 +46,9 @@ cmake -DWITH_QT=ON -DWITH_OPENGL=ON -DFORCE_VTK=ON -DWITH_TBB=ON -DWITH_GDAL=ON 
 make
 sudo make install
 sudo ldconfig
+
+#Test openCV installtion 
+python OpenCV/samples/python/demo.py 
 
 #This script written over Manuel Ignacio script >> https://milq.github.io/install-opencv-ubuntu-debian/
 #Feel free to copy it, share it, edit it
